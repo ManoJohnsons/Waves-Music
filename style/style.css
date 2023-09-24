@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #121212;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 196px;
+    background-color: #000000;
+}
+
+.sidebar .logo {
+    width: 130px;
+    background-color: white;
+}
+
+.sidebar .navigation ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.sidebar .navigation ul li {
+    padding: 10px 0px;
+}
+
+.sidebar .navigation ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.sidebar .navigation ul li a:hover,
+.sidebar .navigation ul li a:active,
+.sidebar .navigation ul li a:focus {
+    color: #ffffff;
+}
+
+.sidebar .navigation ul li .fa {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.main-container {
+    margin-left: 245px;
+    margin-bottom: 100px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #101010;
+    padding: 14px 30px;
+}
+
+.topbar .prev-next-buttons button {
+    color: #7a7a7a;
+    cursor: not-allowed;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    font-size: 10px;
+    border: 0px;
+    background-color: #090909;
+    margin-right: 10px;
+}
+
+.topbar .navbar {
+    display: flex;
+    align-items: center;
+}
+
+.topbar .navbar ul {
+    list-style: none;
+}
+
+.topbar .navbar ul li {
+    display: inline-block;
+    margin: 0px 8px;
+    width: 70px;
+}
+
+.topbar .navbar ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;;
+}
+
+.topbar .navbar ul li a:hover,
+.topbar .navbar ul li a:active,
+.topbar .navbar ul li a:focus {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.topbar .navbar button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.topbar .navbar button:hover,
+.topbar .navbar button:active,
+.topbar .navbar button:focus {
+    background-color: #f2f2f2;
+}
+
+.bottom {
+    position: sticky;
+    bottom: 0px;
+    height: 130px;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
