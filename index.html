@@ -80,18 +80,36 @@
         </div>
 
         <!--playlists-->
+        <div class="playlistActualMusic">
+            <div class="musicPicture">
+                <img id="picture" src="">
+            </div>
+
+            <span id="musicName"></span>
+
+            <audio id="player" src=""></audio>
+        </div>
+
         <!--Barra de manipulçao da musica-->
         <div class="bottombar">
-            <input type="range" name="range" id="musicProgress" min="0" max="100">
             <div class="songController">
-                <i class="fas fa-3x fa-step-backward" id="previous"></i>
-                <i class="fas fa-3x fa-play-circle" id="play"></i>
-                <i class="fas fa-3x fa-step-forward" id="next"></i>
+                <button id="previous"><i class="fas fa-3x fa-step-backward"></i></button>
+                <button id="play"><i class="fas fa-3x fa-play-circle"></i></button>
+                <button id="next"><i class="fas fa-3x fa-step-forward"></i></button>
             </div>
+            <footer>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="time">
+                    <span id="currentTime">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+            </footer>
         </div>
     </div>
 
-
+    <script type="module" src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/9fc648c774.js" crossorigin="anonymous">
     </script>
 </body>

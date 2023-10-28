@@ -4,6 +4,10 @@
 }
 
 body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #121212;
     font-family: 'Montserrat', sans-serif;
 }
@@ -57,7 +61,7 @@ body {
 .topbar {
     display: flex;
     justify-content: space-between;
-    background-color: #101010;
+    background-color: #000000;
     padding: 14px 30px;
 }
 
@@ -121,14 +125,93 @@ body {
     background-color: #f2f2f2;
 }
 
-.bottom {
+.playlistActualMusic {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    height: 500px;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.musicPicture {
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.musicPicture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#musicName {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.bottombar {
     position: sticky;
     bottom: 0px;
     height: 130px;
     background-color: #000000;
-    color: #ffffff;
+    color: #b3b3b3;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.bottombar .songController button {
+    border: none;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.bottombar .songController i {
+    font-size: 60px;
+    padding: 5px;
+    color: #b3b3b3;
+    transition: all .2s;
+}
+
+.bottombar .songController i:hover {
+    color: #f2f2f2;
+}
+
+footer {
+    width: 100%;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.progress-bar {
+    height: 8px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.progress {
+    height: 8px;
+    background-color:#b3b3b3;
+    border-radius: 5px;
 }
